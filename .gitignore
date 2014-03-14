@@ -1,0 +1,5 @@
+*.pdf
+*.PDF
+*~
+# Archivos con notas personales no destinadas al consumo público
+*.priv.*
