@@ -36,6 +36,7 @@ $wgServer = "http://localhost";
 $wgStylePath = "$wgScriptPath/skins";
 
 ## The relative URL path to the logo.  Make sure you change this from the default,
+# 
 ## or else you'll overwrite your logo when you upgrade!
 $wgLogo             = "$wgStylePath/common/images/mitosis.de.rueda.png";
 
@@ -130,7 +131,6 @@ $wgResourceLoaderMaxQueryLength = -1;
 # but check specific extension documentation for more details
 # The following extensions were automatically enabled:
 require_once( "$IP/extensions/Cite/Cite.php" );
-require_once( "$IP/extensions/ConfirmEdit/ConfirmEdit.php" );
 require_once( "$IP/extensions/Gadgets/Gadgets.php" );
 require_once( "$IP/extensions/ImageMap/ImageMap.php" );
 require_once( "$IP/extensions/InputBox/InputBox.php" );
@@ -152,3 +152,22 @@ require_once( "$IP/extensions/YouTube/YouTube.php" );
 # Add more configuration options below.
 
 $wgMaxTocLevel = 3;
+require_once( "$IP/extensions/ConfirmEdit/ConfirmEdit.php" );
+require_once( "$IP/extensions/ConfirmEdit/QuestyCaptcha.php");
+$wgCaptchaClass = 'QuestyCaptcha';
+$arr = array (
+	        "Por favor, no responda a esta pregunta" => '',
+		'Si usted es un humano, escriba mil novecientos ochenta y cuatro en cifras:' => '1984',
+		'Escriba EN MAYÚSCULAS el nombre de la fruta que le cayó a Isaac Newton en la cabeza y con la que también se envenenaron Blanca Nieves y Alan Turing:' => 'MANZANA',
+		'Si usted no es un robot, responda a esta pregunta simplemente escribiendo una sola hache mayúscula' => 'H',
+		'¿Borges era ciego, sordo o mudo? (responda EN MAYÚSCULAS)' => 'CIEGO',
+		'¿Se acuerda usted que Cervantes perdió la movilidad de un miembro en la batalla de Lepanto y que por culpa de esa lesión se ganó malamente el apodo de MANCO? Como usted no es un robot, me va a escribir EN MAYÚSCULAS el nombre aquella parte del cuerpo de Cervantes:' => 'MANO',
+		'¿Uno más uno? (responda con tres letras minúsculas)' => 'dos',
+		'Si es usted un humano, teclee una sola arroba aquí:' => '@',
+		'Escriba EN MAYÚSCULAS el plural de la palabra burro:' => 'BURROS',
+					);
+foreach ( $arr as $key => $value ) {
+	        $wgCaptchaQuestions[] = array( 'question' => $key, 'answer' => $value );
+}
+
+
