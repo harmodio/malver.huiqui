@@ -168,4 +168,6 @@ $arr = array (
 foreach ( $arr as $key => $value ) {
 	        $wgCaptchaQuestions[] = array( 'question' => $key, 'answer' => $value );
 }
+require_once( "$IP/extensions/MobileFrontend/MobileFrontend.php" );
+$wgMFAutodetectMobileView = true;
 
