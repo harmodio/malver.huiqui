@@ -289,9 +289,10 @@ $messages['km'] = array(
 
 /** Korean (한국어)
  * @author Kwj2772
+ * @author 아라
  */
 $messages['ko'] = array(
-	'localisationupdate-desc' => '번역된 시스템 메시지를 가능한 한 최신으로 유지',
+	'localisationupdate-desc' => '번역된 메시지를 가능한 한 최신으로 유지합니다',
 );
 
 /** Colognian (Ripoarisch)
@@ -329,7 +330,7 @@ $messages['ms'] = array(
 	'localisationupdate-desc' => 'Memastikan kekemaskinian mesej-mesej yang disetempatkan',
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎)
+/** Norwegian Bokmål (norsk bokmål)
  * @author Nghtwlkr
  */
 $messages['nb'] = array(
@@ -343,7 +344,7 @@ $messages['nl'] = array(
 	'localisationupdate-desc' => 'Houdt de gelokaliseerde berichten zo actueel mogelijk',
 );
 
-/** Norwegian Nynorsk (norsk (nynorsk)‎)
+/** Norwegian Nynorsk (norsk nynorsk)
  * @author Gunnernett
  */
 $messages['nn'] = array(
@@ -373,10 +374,11 @@ $messages['pms'] = array(
 
 /** Portuguese (português)
  * @author Hamilton Abreu
+ * @author Luckas
  * @author Malafaya
  */
 $messages['pt'] = array(
-	'localisationupdate-desc' => 'Mantém as mensagens localizadas tão actualizadas quanto possível',
+	'localisationupdate-desc' => 'Mantém as mensagens localizadas tão atualizadas quanto possível',
 );
 
 /** Brazilian Portuguese (português do Brasil)

@@ -48,9 +48,6 @@ $messages = array(
 'tog-shownumberswatching' => 'Ший теркама дагарленгах оагӀув чулаьца бола дакъалаьцархой таьрах хьахьокха',
 'tog-oldsig' => 'Дола кулгайоазув:',
 'tog-fancysig' => 'Ший кулга яздара массахоамбаккхам (ший лоӀаме Ӏинка йоацаш)',
-'tog-externaleditor' => 'Арена гӀалатнийсдарца болх бе (ший болх ховш болачара мара мегаш дац, хьамлоархIара ший-тайпара оттам эша; [//www.mediawiki.org/wiki/Manual:External_editors хьажа эша])',
-'tog-externaldiff' => 'Арена бӀасакхосса болхоагӀувца болх бе (ший болх ховш болачара мара мегаш дац, хьамлоархIара ший-тайпара оттам эша; [//www.mediawiki.org/wiki/Manual:External_editors хьажа эша])',
-'tog-showjumplinks' => '"Дехьадала" яха новкъостала Ӏинк хьахьокха',
 'tog-uselivepreview' => 'Сиха бӀарахьажар (JavaScript) (Экспериментально)',
 'tog-forceeditsummary' => 'Хоам бе, хувцамий лоацам белгал даь деце',
 'tog-watchlisthideown' => 'Са хувцамаш теркама дагарчера къайладаккха',
@@ -185,8 +182,8 @@ $messages = array(
 'help' => 'Куцтохкам',
 'search' => 'Лахаp',
 'searchbutton' => 'Хьалаха',
-'go' => 'Дехьавала',
-'searcharticle' => 'Дехьавала',
+'go' => 'Дехьа гӀо',
+'searcharticle' => 'Дехьа гӀо',
 'history' => 'искар',
 'history_short' => 'Искар',
 'updatedmarker' => 'Со ханача денца хувцамаш хиннaд',
@@ -231,14 +228,14 @@ $messages = array(
 'lastmodifiedat' => 'Укх оагӀув тӀехьара  хувцам: $2, $1.',
 'viewcount' => 'Укх оагӀув тӀа бӀаргтасса хиннад {{PLURAL:$1|цхьазза|$1 шозза}}.',
 'protectedpage' => 'Лорама оагӀув',
-'jumpto' => 'Укхаза дехьавала/яла:',
+'jumpto' => 'Укхаза дехьа гӀо:',
 'jumptonavigation' => 'никътохкарг',
 'jumptosearch' => 'леха',
 'pool-timeout' => 'ЧIегатохара сабаран ха чакхаяьннай',
 'pool-queuefull' => 'Хаттарий цӀа хьалдизад',
 'pool-errorunknown' => 'Довзаш доаца гӀалат',
 
-# All link text and link target definitions of links into project namespace that get used by other message strings, with the exception of user group pages (see grouppage) and the disambiguation template definition (see disambiguations).
+# All link text and link target definitions of links into project namespace that get used by other message strings, with the exception of user group pages (see grouppage).
 'aboutsite' => 'Лоацам {{SITENAME}}',
 'aboutpage' => 'Project:Лоацам',
 'copyright' => '$1 чулоацамаца тIакхоачаш да.',
@@ -248,7 +245,6 @@ $messages = array(
 'disclaimers' => 'Бокъонах юхавалаp',
 'disclaimerpage' => 'Project:Бокъонах юхавалаp',
 'edithelp' => 'Хувцама куцтохкам',
-'edithelppage' => 'Help:ГӀалатнийсдар',
 'helppage' => 'Help:Чулоацам',
 'mainpage' => 'Кертера оагӀув',
 'mainpage-description' => 'Кертера оагӀув',
@@ -523,7 +519,6 @@ $messages = array(
 'viewprevnext' => '($1 {{int:pipe-separator}} $2) ($3) хьажа',
 'searchmenu-exists' => "'''Укх масса-хьахьоадайтамач ер оаг|ув \"[[:\$1]]\" я'''",
 'searchmenu-new' => "'''Укх \"[[:\$1]]\" масса-хьахоадайтамач оагIув хьае!'''",
-'searchhelp-url' => 'Help:Чулоацам',
 'searchprofile-articles' => 'Гомлен оагIувнаш',
 'searchprofile-project' => 'Дагарлеи хьахоадайтами оагIувнаш',
 'searchprofile-images' => 'Медифаг',
@@ -556,9 +551,6 @@ $messages = array(
 'powersearch-field' => 'Лахар',
 'powersearch-toggleall' => 'Деррига',
 'powersearch-togglenone' => 'Цхьаккха',
-
-# Quickbar
-'qbsettings-none' => 'Цхьаккха',
 
 # Preferences page
 'preferences' => 'Оттамаш',
@@ -679,7 +671,6 @@ $messages = array(
 'recentchangeslinked-feed' => 'Гаргалон хувцамаш',
 'recentchangeslinked-toolbox' => 'Гаргалон хувцамаш',
 'recentchangeslinked-title' => '$1ца хьалаьца хувцамаш',
-'recentchangeslinked-noresult' => 'Укх заманашка гаргарон оагIувнаш тIа хувцамаш хиннаяц.',
 'recentchangeslinked-summary' => "Ер, Iинк яь йола оагIув (е укх цатегачу чуйоагIараш), дукха ха йоацаш хьийца оагIувнашкий дагарле я.
 [[Special:Watchlist|Шун теркама дагарленашках]] чуйоагIа оагIувнаш '''белгалаяь я'''.",
 'recentchangeslinked-page' => 'ОагIува цIи',
@@ -748,8 +739,6 @@ $messages = array(
 # Statistics
 'statistics' => 'Дагара куц',
 'statistics-pages' => 'ОагIувнаш',
-
-'disambiguationspage' => 'Template: ЦаI маIандоацар',
 
 'brokenredirects-edit' => 'хувца',
 'brokenredirects-delete' => 'дIадаккха',
@@ -920,8 +909,6 @@ $messages = array(
 'blocklogentry' => '[[$1]] чIега белаб,  $2 $3 ха ялалца',
 'unblocklogentry' => '$1 юха яста я',
 'block-log-flags-nocreate' => 'ЛархIамий дагарчена цIи яьккхар пурам янза я.',
-'blockme' => 'ЧIега бола сона',
-'proxyblocksuccess' => 'Хьадаьд.',
 
 # Move page
 'move-page-legend' => 'ОагIува цIи хувца',
@@ -967,7 +954,7 @@ $messages = array(
 'allmessagesdefault' => 'Сатийна улла яздам',
 'allmessages-filter-all' => 'Дерригаш',
 'allmessages-language' => 'Мотт:',
-'allmessages-filter-submit' => 'Дехьавала/яла',
+'allmessages-filter-submit' => 'Дехьа гӀо',
 
 # Thumbnails
 'thumbnail-more' => 'Хьадоккхаде',
@@ -1073,7 +1060,7 @@ $messages = array(
 * gpslongitude
 * gpsaltitude',
 
-# EXIF tags
+# Exif tags
 'exif-imagewidth' => 'Шерал',
 'exif-imagelength' => 'Лакхал',
 'exif-imagedescription' => 'Сурта цIи',
@@ -1113,7 +1100,7 @@ $messages = array(
 'confirm_purge_button' => 'ХIаа',
 
 # Multipage image navigation
-'imgmultigo' => 'Дехьавала/яла!',
+'imgmultigo' => 'Дехьа гӀо!',
 'imgmultigoto' => '$1 оагIув тIа дехьавала',
 
 # Table pager
@@ -1132,11 +1119,6 @@ $messages = array(
 'version-specialpages' => 'ГIулакхий оагIувнаш',
 'version-version' => '(Доржам $1)',
 'version-software-version' => 'Доржам',
-
-# Special:FilePath
-'filepath' => 'Паьлачу никъ',
-'filepath-page' => 'Паьл:',
-'filepath-submit' => 'Дехьавала/яла',
 
 # Special:FileDuplicateSearch
 'fileduplicatesearch-filename' => 'ПаьлацIи:',

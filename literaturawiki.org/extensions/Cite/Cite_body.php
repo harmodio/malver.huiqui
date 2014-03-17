@@ -289,7 +289,7 @@ class Cite {
 
 		# Not clear how we could get here, but something is probably
 		# wrong with the types.  Let's fail fast.
-		$this->croak( 'cite_error_key_str_invalid', serialize( "$str; $key" ) );
+		throw new MWException( 'Invalid $str and/or $key: ' . serialize( array( $str, $key ) ) );
 	}
 
 	/**
@@ -443,7 +443,7 @@ class Cite {
 					);
 			}
 		} else {
-			$this->croak( 'cite_error_stack_invalid_input', serialize( array( $key, $str ) ) );
+			throw new MWException( 'Invalid stack key: ' . serialize( $key ) );
 		}
 	}
 
@@ -1172,25 +1172,13 @@ class Cite {
 		# We rely on the fact that PHP is okay with passing unused argu-
 		# ments to functions.  If $1 is not used in the message, wfMessage will
 		# just ignore the extra parameter.
-		$ret = '<strong class="error">' .
-			wfMessage( 'cite_error', wfMessage( $key, $param )->plain() )->plain() .
+		$ret = '<strong class="error mw-ext-cite-error">' .
+			wfMessage( 'cite_error', wfMessage( $key, $param )->inContentLanguage()->plain() )->inContentLanguage()->plain() .
 			'</strong>';
 		if ( $parse == 'parse' ) {
 			$ret = $this->parse( $ret );
 		}
 		return $ret;
-	}
-
-	/**
-	 * Die with a backtrace if something happens in the code which
-	 * shouldn't have
-	 *
-	 * @param int $error  ID for the error
-	 * @param string $data Serialized error data
-	 */
-	function croak( $error, $data ) {
-		wfDebugDieBacktrace( wfMessage( 'cite_croak', $this->error( $error ), $data )
-			->inContentLanguage()->text() );
 	}
 
 	/**#@-*/

@@ -170,4 +170,3 @@ foreach ( $arr as $key => $value ) {
 	        $wgCaptchaQuestions[] = array( 'question' => $key, 'answer' => $value );
 }
 
-

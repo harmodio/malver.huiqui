@@ -5,6 +5,7 @@
  * @file
  * @ingroup Extensions
  */
+// @codingStandardsIgnoreFile
 
 $specialPageAliases = array();
 
@@ -51,6 +52,11 @@ $specialPageAliases['br'] = array(
 /** Bosnian (bosanski) */
 $specialPageAliases['bs'] = array(
 	'Gadgets' => array( 'Dodaci' ),
+);
+
+/** Chechen (нохчийн) */
+$specialPageAliases['ce'] = array(
+	'Gadgets' => array( 'Гаджеташ' ),
 );
 
 /** Czech (česky) */
@@ -191,6 +197,11 @@ $specialPageAliases['lad'] = array(
 /** Luxembourgish (Lëtzebuergesch) */
 $specialPageAliases['lb'] = array(
 	'Gadgets' => array( 'Gadgeten' ),
+);
+
+/** Minangkabau (Baso Minangkabau) */
+$specialPageAliases['min'] = array(
+	'Gadgets' => array( 'Pakakeh' ),
 );
 
 /** Macedonian (македонски) */
